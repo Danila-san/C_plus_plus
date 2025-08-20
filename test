@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+#include <cctype>
+using namespace std;
+int main()
+
+{
+int rez;
+int d;
+int w = 24;
+char qw = '*';
+	cout <<	"Введите количество дней (для преоброзования в часы) :  " ;
+	cin >> d;
+	if ( ! cin >> d){
+		cout << "Введена не цифра";
+		return 1;
+	}
+	switch (qw){
+			case '*' : 
+			rez = d * w ;
+			cout << "Результат (в ч) :" << rez ;
+		break ;
+		}
+			return 0;
+}
