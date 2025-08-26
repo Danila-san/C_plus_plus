@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+#include <cctype>
+#include <cstring>
+#include <string>
+using namespace std;
+int main(){
+	string q, w;
+	string qw;
+	
+	cout << "Введите строку 1 : " ;
+	cin >> q ;
+	cout << "Введите строку 2 : " ;
+	cin >> w;
+	
+	cout << "Длина строки 1 : " << q.size() << endl;
+	cout << "Длина строки 2 : " << w.size() << endl;
+	
+	if (q == w){
+		cout << "Эти строки одинаковые" << endl;
+	}else{
+		cout << "Эти строки не одинаковые" << endl;
+	}
+	qw = q + w;
+	cout << "Строки 1 и 2 вместе : " <<  qw << endl;
+	cout << "Длина строк 1 и 2 : " << qw.size() ;
+	
+	return 0;
+}
