@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+#include <string>
+using namespace std;
+int main ()
+{
+	int i;
+	int tru;
+	string name1= "Гарри";
+	string name2= "Рон";
+	string name3= "Гермиона";
+	string name4= "Драко";
+	string name5= "Снег";
+	string name6= "Альбус";
+		
+	srand(time (0));
+	i = rand() % 6 + 1;
+	cout << "1 - " << name1<< endl;
+	cout << "2 - " << name2<< endl;
+	cout << "3 - " << name3<< endl;
+	cout << "4 - " << name4<< endl;
+	cout << "5 - " << name5<< endl;
+	cout << "6 - " << name6<< endl;
+	
+	while(true){
+	cout << "Введите номер имени : " ;
+	cin >> tru;
+	
+	if (! cin >> tru){
+		cout << "Ошибка";
+		return 1;
+	}
+	if (tru < i) {
+		cout << "Не верно"<< endl;
+	}
+	else {
+		cout << "угадал";
+	break;}
+	}
+		return 0 ;
+	}
